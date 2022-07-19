@@ -14,7 +14,7 @@
       </div>
       <div class="col-lg-4 mt-1">
         <div class="personal-image">
-          <img src="../assets/sindi.png" alt="" class="img-fluid">
+          <img src="../assets/sindi.png" alt="" class="img-fluid"> -->
         </div>
       </div>
     </div>
@@ -60,6 +60,8 @@ export default {
     ),
     url(./assets/cape-town.jpg) no-repeat top center; */
     background-image: linear-gradient(to bottom, #000000, #151313, #231f1f, #312b2a, #3f3835, #544238, #694c39, #7c5739, #9b6030, #bb6726, #dc6d18, #ff7200);
+    /* background-size: cover;
+    background-position: center; */
     }
 
     .img-fluid {
@@ -109,5 +111,15 @@ export default {
       color: white;
       background-color: black;
       border: solid 1px #ff7200;
+    }
+
+    @media screen and (max-width: 584px) {
+      .intro-msg h1 {
+        font-size: 30px;
+      }
+
+      .hello {
+        overflow: hidden;
+      }
     }
 </style>
