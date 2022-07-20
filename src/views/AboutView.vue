@@ -49,7 +49,7 @@ export default {
   
 }
 </script>
-<style>
+<style scoped>
   #about {
     background-image: linear-gradient(to bottom, #000000, #151313, #231f1f, #312b2a, #3f3835, #544238, #694c39, #7c5739, #9b6030, #bb6726, #dc6d18, #ff7200);
     min-height: 100vh;

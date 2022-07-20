@@ -29,7 +29,7 @@ export default {
     
 }
 </script>
-<style>
+<style scoped>
     #footer {
         background-color: black;
         height: 220px;

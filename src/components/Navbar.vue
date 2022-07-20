@@ -17,7 +17,10 @@
                 <a class="nav-link text-light ms-5" href="#">Resume</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link text-light ms-5" href="#">Portfolio</a>
+                <a class="nav-link text-light ms-5" href="#">Projects</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link text-light ms-5" href="#">Testimonials</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link text-light ms-5" href="#">Contact</a>
