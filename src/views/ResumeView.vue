@@ -7,10 +7,10 @@
                     <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Skills</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Education</button>
+                    <button class="nav-link ms-5" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Education</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Experience</button>
+                    <button class="nav-link ms-5" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Experience</button>
                 </li>
             </ul>
             <div class="tab-content" id="pills-tabContent">
@@ -109,43 +109,19 @@
                     </div>
                 </div>
                 <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                    <div class="card mb-3">
-                        <p class="year fw-400 text-white px-2" style="width: fit-content">2012 - 2016</p>
-                        <h3 class="text-white">Technical Studies</h3>
-                        <p class="Institution">Intshukumo Secondary School</p>
-                        <p class="text-muted">The school was technical and emphasized hands-on learning.</p>
-                    </div>
-                    <div class="card mb-3">
-                         <p class="year fw-400 text-white px-2" style="width: fit-content">2017 - 2022</p>
-                        <h3 class="text-white">Electrical Engineering</h3>
-                        <p class="Institution">Cape Peninsula University of Technology</p>
-                        <p class="text-muted">I was studying to become a qualified technician.</p>
-                    </div>
-                    <div class="card">
-                        <p class="year fw-400 text-white px-2" style="width: fit-content">2022 - current</p>
-                        <h3 class="text-white">Web Development</h3>
-                        <p class="Institution">Life Choices Coding Academy</p>
-                        <p class="text-muted">I'm studying to become a full stack web developer.</p>
+                    <div  v-for="education in educations" :key="education" class="card mb-3">
+                        <p class="year fw-400 text-white px-2" style="width: fit-content">{{ education.date }}</p>
+                        <h3 class="text-white">{{ education.industry }}</h3>
+                        <p class="Institution">{{ education.institution }}</p>
+                        <p class="text-muted">{{ education.description }}</p>
                     </div>
                 </div>
                 <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                    <div class="card mb-3">
-                        <p class="year fw-400 text-white px-2" style="width: fit-content">2020 - 2021</p>
-                        <h3 class="text-white">Entreprenuer</h3>
-                        <p class="employer">China Movers and Shakers</p>
-                        <p class="text-muted">I started a small business with several of my friends during Lockdown.</p>
-                    </div>
-                    <div class="card mb-3">
-                        <p class="year fw-400 text-white px-2" style="width: fit-content;">2021 - 2022</p>
-                        <h3 class="text-white">Packer & Machandiser</h3>
-                        <p class="employer">Pick'n'Pay</p>
-                        <p class="text-muted">I got a job as a packer and merchandiser during the December holidays.</p>
-                    </div>
-                    <div class="card">
-                        <p class="year fw-400 text-white px-2" style="width: fit-content;">2021 - current</p>
-                        <h3 class="text-white">Sales</h3>
-                        <p class="employer">Self-employed</p>
-                        <p class="text-muted">I began hustling by selling products and accessories to some of my peers.</p>
+                    <div v-for="experience in experiences" :key="experience" class="card mb-3">
+                        <p class="year fw-400 text-white px-2" style="width: fit-content">{{ experience.year }}</p>
+                        <h3 class="text-white">{{ experience.department }}</h3>
+                        <p class="employer">{{ experience.employer }}</p>
+                        <p class="text-muted">{{ experience.details }}</p>
                     </div>
                 </div>
             </div>
@@ -155,10 +131,60 @@
 </template>
 <script>
 export default {
-    
+    data() {
+        return {
+            educations: [
+                {
+                    date: "2012 - 2016",
+                    industry: "Technical Studies",
+                    institution: "Intshukumo Secondary School",
+                    description: "The school was technical and emphasized hands-on learning.",
+                },
+                  {
+                    date: "2017 - 2022",
+                    industry: "Electrical Engineering",
+                    institution: "Cape Peninsula University of Technology",
+                    description: "I was studying to become a qualified technician.",
+                },
+                  {
+                    date: "2022 - current",
+                    industry: "Web Development",
+                    institution: "Life Choices Coding Academy",
+                    description: "I'm studying to become a full stack web developer.",
+                },   
+            ],
+            experiences: [
+                {
+                    year: "2020 - 2021",
+                    department: "Entreprenuer",
+                    employer: "China Movers and Shakers",
+                    details: "I started a small business with several of my friends during Lockdown.",
+                },
+                  {
+                    year: "2021 - 2022",
+                    department: "Packer & Machandiser",
+                    employer: "Pick'n'Pay",
+                    details: "I got a job as a packer and merchandiser during the December holidays.",
+                },
+                  {
+                    year: "2021 - current",
+                    department: "Sales",
+                    employer: "Self-employed",
+                    details: "I began hustling by selling products and accessories to some of my peers.",
+                },
+            ]
+        }
+    }
 }
 </script>
 <style scoped>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
 #resume {
     background-image: linear-gradient(to bottom, #000000, #151313, #231f1f, #312b2a, #3f3835, #544238, #694c39, #7c5739, #9b6030, #bb6726, #dc6d18, #ff7200);
     min-height: 100vh;
@@ -182,6 +208,36 @@ export default {
     left: 45%;
     bottom: -8px;
     border-bottom: solid 4px #ff7200;
+}
+
+.nav-pills .nav-link {
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.nav-pills .nav-link:hover {
+    background-color: #000000;
+    color: white;
+}
+
+.nav-pills .nav-link.active {
+    background-color: none;
+}
+
+.nav-pills .nav-link::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff7200;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.nav-pills .nav-link.active::after {
+    width: 50%;
 }
 
 .progress-bar {
@@ -250,9 +306,9 @@ p.Institution {
         margin-left: 300px;
     }
 
-    .card:hover {
+    /* .card:hover {
        
-    }
+    } */
 }
 
 @media screen and (max-width: 864px) {

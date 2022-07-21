@@ -50,22 +50,22 @@ export default {
 }
 </script>
 <style scoped>
-  #about {
+#about {
     background-image: linear-gradient(to bottom, #000000, #151313, #231f1f, #312b2a, #3f3835, #544238, #694c39, #7c5739, #9b6030, #bb6726, #dc6d18, #ff7200);
     min-height: 100vh;
     width: 100%;
-  }
+}
 
-  .about h1 {
+.about h1 {
     font-weight: 600;
     color: white;
     /* text-decoration: underline; */
     text-shadow: 1px 1px 1px black;
     position: relative;
     cursor: pointer;
-  }
+}
 
-  .about h1:before {
+.about h1:before {
     content: '';
     width: 10%;
     height: 1px;
@@ -73,27 +73,31 @@ export default {
     left: 45%;
     bottom: -8px;
     border-bottom: solid 4px #ff7200;
-  }
+}
 
-  .details {
+.name {
+  color: #ff7200;
+}
+
+.details {
     display: none;
-  }
+}
 
-  .bio {
+.bio {
     font-size: 20px;
-  }
+}
 
-  button.btn {
+button.btn {
     background-color: #ff7200;
     color: #000000;
-  }
+}
 
-  button.btn:hover {
+button.btn:hover {
     background-color: #000000;
     color: white;
-  }
+}
 
-  @media screen and (max-width: 992px) {
+@media screen and (max-width: 992px) {
     .personal-image {
       display: none;
     }
@@ -102,5 +106,5 @@ export default {
       display: block;
     }
 
-  }
+}
 </style>
