@@ -2,138 +2,19 @@
     <section id="testimonials">
         <div class="testimonials">
             <h1>What People Say</h1>
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="card p-5 mt-5">
+                    <div v-for="(testimonial, index) in testimonials" :key="index" :class="{ active: index === 0}" class="carousel-item">
+                        <div class="card p-5 mt-5">
                                 <div class="details d-flex flex-row">
-                                    <img src="/images/Lihle (1)-min.JPG" class="img-fluid rounded-circle" alt="..." style="width: 150px; height: 150px; object-fit: cover;">
+                                    <img :src="testimonial.imgURL" class="img-fluid rounded-circle" alt="..." style="width: 150px; height: 150px; object-fit: cover;">
                                     <div class="info d-flex flex-column ms-3">
-                                        <p class="text-white">Lihle Goliath</p>
-                                        <p class="text-muted">From Life Choices Academy</p>
+                                        <p class="text-white">{{ testimonial.name }}</p>
+                                        <p class="text-muted">{{ testimonial.relationship }}</p>
                                     </div>
                                 </div>
                                 <div class="reviews">
-                                    <p class="text-white mt-5">Kula Sindile, an individual who is dedicated and motivated to attain his objectives at whatever costs. He is dependable and works well with others.</p>
-                                </div>
-                                    <div class="ratings text-warning mt-5">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="card p-5 my-5">
-                                <div class="details d-flex flex-row">
-                                    <img src="/images/Leandre (5)-min.JPG" class="img-fluid rounded-circle" alt="..." style="width: 150px; height: 150px; object-fit: cover;">
-                                    <div class="info d-flex flex-column ms-3">
-                                        <p class="text-white">Le-Andre Moritz</p>
-                                        <p class="text-muted">From Life Choices Academy</p>
-                                    </div>
-                                </div>
-                                <div class="reviews">
-                                    <p class="text-white mt-5">Sindile is the sort of person that is always striving to better and be the greatest version of himself. In the workplace, his gentle and open-minded personality makes him a pleasure to be around.</p>
-                                </div>
-                                    <div class="ratings text-warning mt-4">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="card p-5 mt-5">
-                                <div class="details d-flex flex-row">
-                                    <img src="/images/Raaid (3)-min.JPG" class="img-fluid rounded-circle" alt="..." style="width: 150px; height: 150px; object-fit: cover;">
-                                    <div class="info d-flex flex-column ms-3">
-                                        <p class="text-white">Raaid Abdullatief</p>
-                                        <p class="text-muted">From Life Choices Academy</p>
-                                    </div>
-                                </div>
-                                <div class="reviews">
-                                    <p class="text-white mt-5">Sindile Kula, His dedication to his profession is absolutely extraordinary. He is a pleasure to deal with and constantly prioritizes his clients.</p>
-                                </div>
-                                <div class="ratings text-warning mt-4">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                                
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="card p-5 my-5">
-                                <div class="details d-flex flex-row">
-                                    <img src="/images/Siyolise (4)-min.JPG" class="img-fluid rounded-circle" alt="..." style="width: 150px; height: 150px; object-fit: cover;">
-                                    <div class="info d-flex flex-column ms-3">
-                                        <p class="text-white">Siyolise Mekuto</p>
-                                        <p class="text-muted">From Life Choices Academy</p>
-                                    </div>
-                                </div>
-                                <div class="reviews">
-                                    <p class="text-white mt-5">Sindile Kula is a determined individual. He goes above and above to assist people and is a pleasure to be around.</p>
-                                </div>
-                                    <div class="ratings text-warning mt-5">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="card p-5 mt-5">
-                                <div class="details d-flex flex-row">
-                                    <img src="/images/Mziyanda (3).JPG" class="img-fluid rounded-circle" alt="..." style="width: 150px; height: 150px; object-fit: cover;">
-                                    <div class="info d-flex flex-column ms-3">
-                                        <p class="text-white">Mziyanda Tobo</p>
-                                        <p class="text-muted">From Life Choices Academy</p>
-                                    </div>
-                                </div>
-                                <div class="reviews">
-                                    <p class="text-white my-5">Sindile is a dependable and diligent young man. Sindile is an outstanding asset and addition to any team or firm, and I would definitely suggest him.</p>
-                                </div>
-                                <div class="ratings text-warning my-4">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                                
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="card p-5 my-5">
-                                <div class="details d-flex flex-row">
-                                    <img src="/images/jason.jpg" class="img-fluid rounded-circle" alt="..." style="width: 150px; height: 150px; object-fit: cover;">
-                                    <div class="info d-flex flex-column ms-3">
-                                        <p class="text-white">Jason Wandrag</p>
-                                        <p class="text-muted">From Life Choices Academy</p>
-                                    </div>
-                                </div>
-                                <div class="reviews">
-                                    <p class="text-white mt-5">Sindile is a hardworking and motivated student who has put in a lot of effort in his studies. His work and approach have steadily improved. I wish him well in his future endeavors.</p>
+                                    <p class="text-white mt-5">{{ testimonial.message }}</p>
                                 </div>
                                 <div class="ratings text-warning mt-5">
                                     <i class="fa-solid fa-star"></i>
@@ -142,20 +23,91 @@
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                 </div>
-                                
-                            </div>
+                        </div>
+                    </div>  
+                </div> 
+            </div> -->
+
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div v-for="(testimonial, index) in testimonials" :key="index" :class="{ active: index === 0}" class="carousel-item">
+                        <div class="card p-5 mt-5">
+                                <div class="details d-flex flex-row">
+                                    <img :src="testimonial.imgURL" class="img-fluid rounded-circle" alt="..." style="width: 150px; height: 150px; object-fit: cover;">
+                                    <div class="info d-flex flex-column ms-3">
+                                        <p class="text-white">{{ testimonial.name }}</p>
+                                        <p class="text-muted">{{ testimonial.relationship }}</p>
+                                    </div>
+                                </div>
+                                <div class="reviews">
+                                    <p class="text-white mt-5">{{ testimonial.message }}</p>
+                                </div>
+                                <div class="ratings text-warning mt-5">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
                         </div>
                     </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-        </div>
         </div>
     </section>
 </template>
 <script>
-
 export default {
-    
+    data() {
+        return {
+            testimonials: [
+                {
+                    imgURL: "https://i.postimg.cc/7P5JV5XM/Lihle-1.jpg",
+                    name: "Lihle Goliath",
+                    relationship: "From Life Choices Academy",
+                    message: "Kula Sindile, an individual who is dedicated and motivated to attain his objectives at whatever costs. He is dependable and works well with others.",
+                },
+                {
+                    imgURL: "https://i.postimg.cc/kgny7L0g/Leandre-5.jpg",
+                    name: "Le-Andre Moritz",
+                    relationship: "From Life Choices Academy",
+                    message: "Sindile is the sort of person that is always striving to better and be the greatest version of himself. In the workplace, his gentle and open-minded personality makes him a pleasure to be around.",
+                },
+                {
+                    imgURL: "https://i.postimg.cc/kG6pFLJm/Raaid-3.jpg",
+                    name: "Raaid Abdullatief",
+                    relationship: "From Life Choices Academy",
+                    message: "Sindile Kula, His dedication to his profession is absolutely extraordinary. He is a pleasure to deal with and constantly prioritizes his clients.",
+                },
+                {
+                    imgURL: "https://i.postimg.cc/d1mxWGdW/Siyolise-4.jpg",
+                    name: "Siyolise Mekuto",
+                    relationship: "From Life Choices Academy",
+                    message: "Sindile Kula is a determined individual. He goes above and above to assist people and is a pleasure to be around.",
+                },
+                {
+                    imgURL: "https://i.postimg.cc/c42GtMcY/Mziyanda-3.jpg",
+                    name: "Mziyanda Tobo",
+                    relationship: "From Life Choices Academy",
+                    message: "Sindile is a dependable and diligent young man. Sindile is an outstanding asset and addition to any team or firm, and I would definitely suggest him.",
+                },
+                {
+                    imgURL: "https://i.postimg.cc/FRLDq3St/jason.jpg",
+                    name: "Jason Wandrag",
+                    relationship: "From Life Choices Academy",
+                    message: "Sindile is a hardworking and motivated student who has put in a lot of effort in his studies. His work and approach have steadily improved. I wish him well in his future endeavors.",
+                },
+            ]
+        }
+    }
 }
 </script>
 <style scoped>
@@ -193,6 +145,10 @@ export default {
 .card {
     background-color: rgba(0, 0, 0, 0.2);
     width: 600px;
-    margin-left: 40px;
+    margin-left: 470px;
 }
+/* .items{
+    display: flex;
+    flex-wrap: nowrap;
+} */
 </style>

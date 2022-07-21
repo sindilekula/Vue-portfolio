@@ -10,9 +10,9 @@
     <form target="_blank" action="https://formspree.io/f/xqknwllo" method="post">
         <div class="row mt-5">
             <div class="col-lg-6">
-                <input type="text" name="name" class="name my-3 text-white" placeholder="Enter your name...">
-                <input type="email" name="email" class="email my-3 text-white" placeholder="Enter your email...">
-                <input type="text" name="phone" class="phone my-3 text-white" placeholder="Enter your phone number...">
+                <input type="text" name="name" class="name my-3 text-white" placeholder="Enter your name..." required>
+                <input type="email" name="email" class="email my-3 text-white" placeholder="Enter your email..." required>
+                <input type="text" name="phone" class="phone my-3 text-white" placeholder="Enter your phone number..." required>
             </div>
             <div class="col-lg-6">
                 <textarea id="message" class="message my-3 text-white" placeholder="Type your message..."></textarea>
