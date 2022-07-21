@@ -4,7 +4,7 @@
     <!-- <h1>{{ msg }}</h1> -->
     <div class="row">
       <div class="col-lg-8">
-        <div class="intro-msg">
+        <div class="intro-msg ms-5">
           <h1>Hi, I'm <span class="name">Sindile Kula</span></h1>
           <p>An <span class="aspire">Aspiring</span> Web Developer!</p>
           <a href="#contact">

@@ -35,12 +35,12 @@
                                 <div class="details d-flex flex-row">
                                     <img :src="testimonial.imgURL" class="img-fluid rounded-circle" alt="..." style="width: 150px; height: 150px; object-fit: cover;">
                                     <div class="info d-flex flex-column ms-3">
-                                        <p class="text-white">{{ testimonial.name }}</p>
+                                        <p class="name">{{ testimonial.name }}</p>
                                         <p class="text-muted">{{ testimonial.relationship }}</p>
                                     </div>
                                 </div>
                                 <div class="reviews">
-                                    <p class="text-white mt-5">{{ testimonial.message }}</p>
+                                    <p class="text-white mt-5">"{{ testimonial.message }}"</p>
                                 </div>
                                 <div class="ratings text-warning mt-5">
                                     <i class="fa-solid fa-star"></i>
@@ -146,6 +146,11 @@ export default {
     background-color: rgba(0, 0, 0, 0.2);
     width: 600px;
     margin-left: 470px;
+    box-shadow: 2px 2px 3px 2px #000000;
+}
+
+p.name {
+    color: #ff7200;
 }
 /* .items{
     display: flex;

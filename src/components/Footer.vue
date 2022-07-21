@@ -52,6 +52,10 @@ export default {
         color: #ff7200;
     }
 
+    a.fa-brands:hover {
+        color: #ff7200;
+    }
+
     @media screen and (max-width: 768px) {
         ul.list li {
             font-size: 10px;

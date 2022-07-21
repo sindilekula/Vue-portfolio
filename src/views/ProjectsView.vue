@@ -6,7 +6,7 @@
           <div class="cols">
               <div v-for="(project, index) in projects" :key="index" class="col-lg-4" ontouchstart="this.classList.toggle('hover');">
                 <div class="container">
-                  <div class="front" style="background-image: url(https://i.postimg.cc/ncV3CwZ5/calculator-project.png)">
+                  <div class="front" :style="{'background-image':` url(${project.imgURL})`}">
                     <div class="inner">
                       <p>{{ project.title }}</p>
                       <span>Lorem ipsum</span>
@@ -25,7 +25,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="button">
+                <div class="button mb-5">
                   <a target="_blank" :href="project.github">
                   <button type="button" class="btn btn-lg rounded-pill mt-5"><span><i class="fa-brands fa-github px-1"></i></span>Github</button>
                   </a>
@@ -240,26 +240,26 @@ export default {
             live: "https://beamish-jalebi-9338bc.netlify.app/",
           },
           {
-            imgURL: "https://i.postimg.cc/MGf213GS/myportfolio.png",
+            imgURL: "https://i.postimg.cc/kGF1PznW/myportfolio1.png",
             title: "Personal Portfolio",
             client: "Life Choices",
             industry: "Web Development",
             technologies: "HTML, CSS & JAVASCRIPT",
             date: "17 June 2022",
-            description: "For this project I was tasked to create a BMI calculator with its functionality",
+            description: "For this project I was tasked to create a personal portfolio",
             github: "https://github.com/sindilekula/end-of-module-project",
             live: "https://bespoke-kitsune-95253c.netlify.app/",
           },
           {
-            imgURL: "",
-            title: "Bookstore",
+            imgURL: "https://i.postimg.cc/wT53RpxD/propertylisting.png",
+            title: "Property Listing",
             client: "Life Choices",
             industry: "Web Development",
-            technologies: "HTML, CSS , JAVASCRIPT & VUE.JS",
-            date: "8 July 2022",
-            description: "For this project we were tasked to create a point of sale with its CRUD functionality",
-            github: "https://github.com/sindilekula/BMI-Calculator",
-            live: "https://astounding-empanada-bf00c8.netlify.app/",
+            technologies: "HTML, CSS & JAVASCRIPT",
+            date: "30 June 2022",
+            description: "For this project I was tasked to create a property listing website.",
+            github: "https://github.com/sindilekula/Property-Listing",
+            live: "https://taupe-entremet-133de5.netlify.app",
           },
         ]
       }
