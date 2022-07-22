@@ -3,18 +3,10 @@
         <div class="container text-center">
              <div class="social-media">
                 <h4>FOLLOW ME</h4>
-                <a target="_blank" href="https://github.com/sindilekula">
-                    <button type="button" class="btn btn-lg rounded-pill mt-3"><i class="fa-brands fa-github text-light" data-toggle="tooltip" data-placement="top" title="Github"></i></button>
-                </a>
-                <a target="_blank" href="https://www.linkedin.com/in/sindile-kula-2b777a238/">
-                    <button type="button" class="btn btn-lg rounded-pill mt-3"><i class="fa-brands fa-linkedin text-light ms-5" data-toggle="tooltip" data-placement="top" title="Linkedin"></i></button>
-                </a>
-                <a target="_blank" href="https://codepen.io/sindilekula">
-                    <button type="button" class="btn btn-lg rounded-pill mt-3"><i class="fa-brands fa-codepen text-light ms-5" data-toggle="tooltip" data-placement="top" title="Codepen"></i></button>
-                </a>
-                <a target="_blank" href="https://accounts.google.com/">
-                    <button type="button" class="btn btn-lg rounded-pill mt-3"><i class="fa-brands fa-google text-light ms-5" data-toggle="tooltip" data-placement="top" title="Google"></i></button>
-                </a>
+                <a target="_blank" href="https://github.com/sindilekula"><i class="fa-brands fa-github text-light" data-toggle="tooltip" data-placement="top" title="Github"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/sindile-kula-2b777a238/"><i class="fa-brands fa-linkedin text-light ms-5" data-toggle="tooltip" data-placement="top" title="Linkedin"></i></a>
+                <a target="_blank" href="https://codepen.io/sindilekula"><i class="fa-brands fa-codepen text-light ms-5" data-toggle="tooltip" data-placement="top" title="Codepen"></i></a>
+                <a target="_blank" href="https://accounts.google.com/"><i class="fa-brands fa-google text-light ms-5" data-toggle="tooltip" data-placement="top" title="Google"></i></a>
             </div>
             <div class="footer-names mt-5">
                 <ul class="list">
