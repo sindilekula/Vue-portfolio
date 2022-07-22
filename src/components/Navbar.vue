@@ -90,6 +90,10 @@ nav ul li a:hover::after{
     width: 100%;
 }
 
+vbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+    justify-content: center;
+}
+
 ul li.nav-link {
     margin-left: 100px;
 }
