@@ -97,7 +97,7 @@ export default {
                     imgURL: "https://i.postimg.cc/k4rDphmP/Live-1.jpg",
                     name: "Live Maweni",
                     relationship: "From Life Choices Academy",
-                    message: "Sindile is a dependable and diligent young man. Sindile is an outstanding asset and addition to any team or firm, and I would definitely suggest him.",
+                    message: "Sindile is an immensely resilient person who is also incredibly creative, intelligent, and hardworking. He's not simply a pleasure to work with; in fact, it's astounding to see just how much time and attention he puts into each project.",
                 },
                 {
                     imgURL: "https://i.postimg.cc/FRLDq3St/jason.jpg",

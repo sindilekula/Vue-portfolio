@@ -14,7 +14,7 @@
       </div>
       <div class="col-lg-4 mt-1">
         <div class="personal-image">
-          <img src="../assets/sindi.png" alt="" class="img-fluid"> -->
+          <img src="../assets/sindi.png" alt="" class="img-fluid">
         </div>
       </div>
     </div>

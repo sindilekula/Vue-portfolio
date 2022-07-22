@@ -1,7 +1,7 @@
 <template>
 <section id="about">
   <div class="about">
-    <h1>Know Me More<span class="emphasis ms-2"><i class="fa-solid fa-exclamation"></i></span></h1>
+    <h1>Me, Myself & I<span class="emphasis ms-2"><i class="fa-solid fa-exclamation"></i></span></h1>
 
     <div class="row">
       <div class="col-lg-3">
