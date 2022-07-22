@@ -4,7 +4,7 @@
     <!-- <h1>{{ msg }}</h1> -->
     <div class="row">
       <div class="col-lg-8">
-        <div class="intro-msg ms-5">
+        <div class="intro-msg">
           <h1>Hi, I'm <span class="name">Sindile Kula</span></h1>
           <p>An <span class="aspire">Aspiring</span> Web Developer!</p>
           <a href="#contact">
@@ -67,7 +67,17 @@ export default {
     .img-fluid {
       height: 600px;
       position: relative;
+      animation: up-down 1.9s infinite ease-in-out alternate;
     }
+
+    @keyframes up-down{
+    from{
+    transform: translatey(10px);
+  }
+    to{
+    transform: translatey(-10px);
+  }
+}
 
     .col-lg-4 {
       margin-top: 200px;
@@ -77,6 +87,10 @@ export default {
       display: flex;
       justify-content: flex-start;
       margin-top: 200px;
+    }
+
+    .intro-msg {
+      margin-left: 20px;
     }
 
     .intro-msg h1{

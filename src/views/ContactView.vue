@@ -1,14 +1,14 @@
 <template>
 <section id="contact">
   <div class="container">
-    <h1 class="heading">Get In Touch</h1>
+    <h1 class="heading">Get In Touch<span class="emphasis ms-2"><i class="fa-solid fa-exclamation"></i></span></h1>
     <ul class="details">
         <li><p><span class="icon ms-2"><i class="fa-solid fa-phone ms-2"></i></span>:084 384 2221</p></li>
         <li><p><span class="icon"><i class="fa-solid fa-envelope ms-2"></i></span>:Kulasindile@gmail.com</p></li>
         <li><p><span class="icon"><i class="fa-solid fa-location-dot ms-2"></i></span>:206 Ny21, Gugulethu, 7750</p></li>
     </ul>
     <form target="_blank" action="https://formspree.io/f/xqknwllo" method="post">
-        <div class="row mt-5">
+        <div class="row mt-2">
             <div class="col-lg-6">
                 <input type="text" name="name" class="name my-3 text-white" placeholder="Enter your name..." required>
                 <input type="email" name="email" class="email my-3 text-white" placeholder="Enter your email..." required>
@@ -74,6 +74,10 @@ export default {};
     left: 45%;
     bottom: -8px;
     border-bottom: solid 4px #ff7200;
+}
+
+.emphasis {
+  color: #ff7200;
 }
 
 .details {

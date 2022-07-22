@@ -1,7 +1,7 @@
 <template>
     <section id="resume">
         <div class="resume">
-            <h1>Resume</h1>
+            <h1>Resume<span class="emphasis ms-2"><i class="fa-solid fa-exclamation"></i></span></h1>
             <ul class="nav nav-pills mb-3 p-4" id="pills-tab" role="tablist">
                 <li class="nav-item" role="presentation">
                     <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Skills</button>
@@ -33,28 +33,28 @@
                                 <div class="progress-bar bg-dark" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                             <div class="languages d-flex">
-                                <p class="text-light mt-3">Bootstrap</p>
+                                <p class="text-light mt-3">BOOTSTRAP</p>
                                 <p class="text-light mt-3 ms-2">90%</p>
                             </div>
                             <div class="progress" style="height: 10px;">
                                 <div class="progress-bar bg-dark" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                              <div class="languages d-flex">
-                                <p class="text-light mt-3">Javascript</p>
+                                <p class="text-light mt-3">JAVASCRIPT</p>
                                 <p class="text-light mt-3 ms-2">65%</p>
                             </div>
                             <div class="progress" style="height: 10px;">
                                 <div class="progress-bar bg-dark" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                              <div class="languages d-flex">
-                                <p class="text-light mt-3">Vue.js</p>
+                                <p class="text-light mt-3">VUE.JS</p>
                                 <p class="text-light mt-3 ms-2">70%</p>
                             </div>
                             <div class="progress" style="height: 10px;">
                                 <div class="progress-bar bg-dark" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                              <div class="languages d-flex">
-                                <p class="text-light mt-3">Node.js</p>
+                                <p class="text-light mt-3">NODE.JS</p>
                                 <p class="text-light mt-3 ms-2">60%</p>
                             </div>
                             <div class="progress" style="height: 10px;">
@@ -64,46 +64,46 @@
                         <div class="col-lg-6 p-4">
                             <h4 class="text-white">Soft Skills</h4>
                             <div class="languages d-flex">
-                                <p class="text-light mt-3">Bootstrap</p>
-                                <p class="text-light mt-3 ms-2">95%</p>
+                                <p class="text-light mt-3">COMMUNICATION</p>
+                                <p class="text-light mt-3 ms-2">75%</p>
                             </div>
                             <div class="progress" style="height: 10px;">
-                                <div class="progress-bar bg-dark" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-dark" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                             <div class="languages d-flex">
-                                <p class="text-light mt-3">Javascript</p>
-                                <p class="text-light mt-3 ms-2">60%</p>
+                                <p class="text-light mt-3">CRITICAL THINKING</p>
+                                <p class="text-light mt-3 ms-2">90%</p>
                             </div>
                             <div class="progress" style="height: 10px;">
-                                <div class="progress-bar bg-dark" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-dark" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                             <div class="languages d-flex">
-                                <p class="text-light mt-3">Vue.js</p>
-                                <p class="text-light mt-3 ms-2">60%</p>
+                                <p class="text-light mt-3">LEADERSHIP</p>
+                                <p class="text-light mt-3 ms-2">85%</p>
                             </div>
                             <div class="progress" style="height: 10px;">
-                                <div class="progress-bar bg-dark" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-dark" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                             <div class="languages d-flex">
-                                <p class="text-light mt-3">Javascript</p>
-                                <p class="text-light mt-3 ms-2">60%</p>
+                                <p class="text-light mt-3">POSITIVE ATTITUDE</p>
+                                <p class="text-light mt-3 ms-2">80%</p>
                             </div>
                             <div class="progress" style="height: 10px;">
-                                <div class="progress-bar bg-dark" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-dark" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                             <div class="languages d-flex">
-                                <p class="text-light mt-3">Javascript</p>
-                                <p class="text-light mt-3 ms-2">60%</p>
+                                <p class="text-light mt-3">TEAM PLAYER</p>
+                                <p class="text-light mt-3 ms-2">80%</p>
                             </div>
                             <div class="progress" style="height: 10px;">
-                                <div class="progress-bar bg-dark" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-dark" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                             <div class="languages d-flex">
-                                <p class="text-light mt-3">Javascript</p>
-                                <p class="text-light mt-3 ms-2">60%</p>
+                                <p class="text-light mt-3">WORK ETHIC</p>
+                                <p class="text-light mt-3 ms-2">90%</p>
                             </div>
                             <div class="progress mb-5" style="height: 10px;">
-                                <div class="progress-bar bg-dark" role="progressbar" style="width: 60%; color: #ff7200" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-dark" role="progressbar" style="width: 90%; color: #ff7200" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                     </div>
@@ -210,6 +210,10 @@ export default {
     border-bottom: solid 4px #ff7200;
 }
 
+.emphasis {
+  color: #ff7200;
+}
+
 .nav-pills .nav-link {
     font-size: 20px;
     cursor: pointer;
@@ -221,7 +225,7 @@ export default {
     color: white;
 }
 
-.nav-pills .nav-link.active {
+.nav-pills.nav-link.active, .nav-pills .show>.nav-link {
     background-color: none;
 }
 

@@ -1,7 +1,7 @@
 <template>
   <section id="projects">
     <div class="projects">
-      <h1>Some Of My Work</h1>
+      <h1>Some Of My Work<span class="emphasis ms-2"><i class="fa-solid fa-exclamation"></i></span></h1>
         <div  class="wrapper mt-5">
           <div class="cols">
               <div v-for="(project, index) in projects" :key="index" class="col-lg-4" ontouchstart="this.classList.toggle('hover');">
@@ -9,7 +9,7 @@
                   <div class="front" :style="{'background-image':` url(${project.imgURL})`}">
                     <div class="inner">
                       <p>{{ project.title }}</p>
-                      <span>Lorem ipsum</span>
+                      <span class="emoji" style="height: 50px"><i class="fa-regular fa-face-grin-squint-tears"></i></span>
                     </div>
                   </div>
                   <div class="back">
@@ -279,6 +279,7 @@ export default {
     background-image: linear-gradient(to bottom, #000000, #151313, #231f1f, #312b2a, #3f3835, #544238, #694c39, #7c5739, #9b6030, #bb6726, #dc6d18, #ff7200);
     min-height: 100vh;
     width: 100%;
+    overflow: hidden;
   }
 
 .projects h1 {
@@ -306,6 +307,15 @@ h1{
   color: #444;
   text-align: center;
   /* margin: 2rem 0; */
+}
+
+.emphasis {
+  color: #ff7200;
+}
+
+span.emoji {
+  color: #ff7200;
+  height: 10px;
 }
 
 .wrapper{
@@ -418,6 +428,7 @@ h1{
     -webkit-perspective: inherit;
             perspective: inherit;
     z-index: 2;
+    font-size: 20px;
 }
 
 .container .back{
@@ -539,6 +550,7 @@ button.btn:hover {
 .col{
     width: 100%;
     margin: 0 0 2rem 0;
+    overflow: hidden;
 }
 
 .content p {

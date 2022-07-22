@@ -1,7 +1,7 @@
 <template>
     <section id="testimonials">
         <div class="testimonials">
-            <h1>What People Say</h1>
+            <h1>What People Say<span class="emphasis ms-2"><i class="fa-solid fa-exclamation"></i></span></h1>
             <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div v-for="(testimonial, index) in testimonials" :key="index" :class="{ active: index === 0}" class="carousel-item">
@@ -42,7 +42,7 @@
                                 <div class="reviews">
                                     <p class="text-white mt-5">"{{ testimonial.message }}"</p>
                                 </div>
-                                <div class="ratings text-warning mt-5">
+                                <div class="ratings mt-3">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -94,8 +94,8 @@ export default {
                     message: "Sindile Kula is a determined individual. He goes above and above to assist people and is a pleasure to be around.",
                 },
                 {
-                    imgURL: "https://i.postimg.cc/c42GtMcY/Mziyanda-3.jpg",
-                    name: "Mziyanda Tobo",
+                    imgURL: "https://i.postimg.cc/k4rDphmP/Live-1.jpg",
+                    name: "Live Maweni",
                     relationship: "From Life Choices Academy",
                     message: "Sindile is a dependable and diligent young man. Sindile is an outstanding asset and addition to any team or firm, and I would definitely suggest him.",
                 },
@@ -142,16 +142,34 @@ export default {
     border-bottom: solid 4px #ff7200;
 }
 
+.emphasis {
+    color: #ff7200;
+}
+
+.ratings {
+    color: #ff7200;
+}
+
+.carousel-item {
+     transition: transform 3s ease-in-out;
+}
 .card {
     background-color: rgba(0, 0, 0, 0.2);
     width: 600px;
+    height: 60vh;
     margin-left: 470px;
     box-shadow: 2px 2px 3px 2px #000000;
+    font-size: 20px;
 }
 
 p.name {
     color: #ff7200;
+    text-shadow: 1px 1px 1px black;
+    position: relative;
+    cursor: pointer;
+
 }
+
 /* .items{
     display: flex;
     flex-wrap: nowrap;

@@ -1,7 +1,7 @@
 <template>
 <section id="about">
   <div class="about">
-    <h1>Know Me More</h1>
+    <h1>Know Me More<span class="emphasis ms-2"><i class="fa-solid fa-exclamation"></i></span></h1>
 
     <div class="row">
       <div class="col-lg-3">
@@ -54,6 +54,7 @@ export default {
     background-image: linear-gradient(to bottom, #000000, #151313, #231f1f, #312b2a, #3f3835, #544238, #694c39, #7c5739, #9b6030, #bb6726, #dc6d18, #ff7200);
     min-height: 100vh;
     width: 100%;
+    overflow: hidden;
 }
 
 .about h1 {
@@ -75,12 +76,24 @@ export default {
     border-bottom: solid 4px #ff7200;
 }
 
+.emphasis {
+  color: #ff7200;
+}
+
 .name {
   color: #ff7200;
 }
 
 .details {
     display: none;
+}
+
+p.text-light {
+  font-size: 20px;
+}
+
+.fw-bold {
+  color: #ff7200;
 }
 
 .bio {
