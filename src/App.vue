@@ -35,6 +35,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  overflow-x: hidden;
   /* color: #2c3e50; */
   
 }

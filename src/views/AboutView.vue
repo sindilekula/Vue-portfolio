@@ -27,7 +27,7 @@
         </div>
 
         <div class="button">
-          <a href="/CV_2021-12-16-034328.pdf" download="">
+          <a href="https://drive.google.com/uc?export=download&id=1HHgZpfHZpRF6n-jsJQHyv_LSmS4GW28C" download="">
             <button type="button" class="btn btn-lg rounded-pill mt-3">Download CV</button>
           </a>
         </div>
