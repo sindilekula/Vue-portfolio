@@ -31,44 +31,37 @@ export default {
 }
 </script>
 <style scoped>
-    #footer {
-        background-color: black;
-        height: 220px;
-    }
+#footer {
+    background-color: black;
+    height: 220px;
+}
 
-    /* .social-media a .fa-brands {
-        border: solid 1px #ff7200;
-        height: 30px;
-        width: 30px;
-        border-radius: 20px;
-    } */
+a.btn.fa-brands {
+    background-color: #ff7200;
+}
 
-    a.btn.fa-brands {
-        background-color: #ff7200;
-    }
+a.btn.fa-brands:hover {
+    background-color: #ff7200;
+    color: #ff7200;
+}
 
-    a.btn.fa-brands:hover {
-        background-color: #ff7200;
-        color: #ff7200;
-    }
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
 
-    ul {
-        display: flex;
-        justify-content: space-between;
-        list-style-type: none;
-    }
+.name {
+    color: #ff7200;
+}
 
-    .name {
-        color: #ff7200;
-    }
+a.fa-brands:hover {
+    color: #ff7200;
+}
 
-    a.fa-brands:hover {
-        color: #ff7200;
+@media screen and (max-width: 768px) {
+    ul.list li {
+        font-size: 10px;
     }
-
-    @media screen and (max-width: 768px) {
-        ul.list li {
-            font-size: 10px;
-        }
-    }
+}
 </style>

@@ -8,7 +8,7 @@
                 <div class="container">
                   <div class="front" :style="{'background-image':` url(${project.imgURL})`}">
                     <div class="inner">
-                      <p>{{ project.title }}</p>
+                      <p class="title">{{ project.title }}</p>
                       <span class="emoji" style="height: 50px"><i class="fa-regular fa-face-grin-squint-tears"></i></span>
                     </div>
                   </div>
@@ -34,157 +34,6 @@
                   </a>
                 </div>
               </div>
-              <!-- <div class="col-lg-4" ontouchstart="this.classList.toggle('hover');">
-                <div class="container">
-                  <div class="front" style="background-image: url(https://i.postimg.cc/1tHZLpTb/Todo-project.png)">
-                    <div class="inner">
-                      <p>TODO-List App</p>
-                      <span>Lorem ipsum</span>
-                    </div>
-                  </div>
-                  <div class="back">
-                    <div class="inner">
-                      <div class="content">
-                        <h3>Project Info</h3>
-                        <p><span class="fw-bold">Client:</span>Life Choices</p>
-                        <p><span class="fw-bold">Industry:</span>Web Development</p>
-                        <p><span class="fw-bold">Technologies:</span>HTML, CSS & JAVASCRIPT</p>
-                        <p><span class="fw-bold">Date:</span>17 June 2022</p>
-                        <p><span class="fw-bold">Description:</span>For this project I needed to create a to-do list app with it's functionality.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="button">
-                  <a target="_blank" href="https://github.com/sindilekula/To-Do-List-App">
-                  <button type="button" class="btn btn-lg rounded-pill mt-5"><span><i class="fa-brands fa-github px-1"></i></span>Github</button>
-                  </a>
-                  <a target="_blank" href="https://thriving-daffodil-5eb93c.netlify.app/">
-                  <button type="button" class="btn btn-lg rounded-pill mt-5 ms-2"><span><i class="fa-solid fa-eye px-1"></i></span>Live</button>
-                  </a>
-                </div>
-              </div> -->
-              <!-- <div class="col-lg-4" ontouchstart="this.classList.toggle('hover');">
-                <div class="container">
-                  <div class="front" style="background-image: url(https://i.postimg.cc/TYqkMgVJ/BMI-project.png)">
-                    <div class="inner">
-                      <p>BMI Calculator</p>
-                      <span>Lorem ipsum</span>
-                    </div>
-                  </div>
-                  <div class="back">
-                    <div class="inner">
-                      <div class="content">
-                        <h3>Project Info</h3>
-                        <p><span class="fw-bold">Client:</span>Life Choices</p>
-                        <p><span class="fw-bold">Industry:</span>Web Development</p>
-                        <p><span class="fw-bold">Technologies:</span>HTML, CSS & JAVASCRIPT</p>
-                        <p><span class="fw-bold">Date:</span>17 June 2022</p>
-                        <p><span class="fw-bold">Description:</span>For this project I was taskked to create a BMI calculator with its functionality</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="button">
-                  <a target="_blank" href="https://github.com/sindilekula/BMI-Calculator">
-                  <button type="button" class="btn btn-lg rounded-pill mt-5"><span><i class="fa-brands fa-github px-1"></i></span>Github</button>
-                  </a>
-                  <a target="_blank" href="https://astounding-empanada-bf00c8.netlify.app/">
-                  <button type="button" class="btn btn-lg rounded-pill mt-5 ms-2"><span><i class="fa-solid fa-eye px-1"></i></span>Live</button>
-                  </a>
-                </div>
-              </div> -->
-              <!-- <div class="col-lg-4" ontouchstart="this.classList.toggle('hover');">
-                <div class="container">
-                  <div class="front" style="background-image: url(https://i.postimg.cc/TYqkMgVJ/BMI-project.png)">
-                    <div class="inner">
-                      <p>BMI Calculator</p>
-                      <span>Lorem ipsum</span>
-                    </div>
-                  </div>
-                  <div class="back">
-                    <div class="inner">
-                      <div class="content">
-                        <h3>Project Info</h3>
-                        <p><span class="fw-bold">Client:</span>Life Choices</p>
-                        <p><span class="fw-bold">Industry:</span>Web Development</p>
-                        <p><span class="fw-bold">Technologies:</span>HTML, CSS & JAVASCRIPT</p>
-                        <p><span class="fw-bold">Date:</span>17 June 2022</p>
-                        <p><span class="fw-bold">Description:</span>For this project I was taskked to create a BMI calculator with its functionality</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="button">
-                  <a target="_blank" href="https://github.com/sindilekula/BMI-Calculator">
-                  <button type="button" class="btn btn-lg rounded-pill mt-5"><span><i class="fa-brands fa-github px-1"></i></span>Github</button>
-                  </a>
-                  <a target="_blank" href="https://astounding-empanada-bf00c8.netlify.app/">
-                  <button type="button" class="btn btn-lg rounded-pill mt-5 ms-2"><span><i class="fa-solid fa-eye px-1"></i></span>Live</button>
-                  </a>
-                </div>
-              </div>
-              <div class="col-lg-4" ontouchstart="this.classList.toggle('hover');">
-                <div class="container">
-                  <div class="front" style="background-image: url(https://i.postimg.cc/TYqkMgVJ/BMI-project.png)">
-                    <div class="inner">
-                      <p>BMI Calculator</p>
-                      <span>Lorem ipsum</span>
-                    </div>
-                  </div>
-                  <div class="back">
-                    <div class="inner">
-                      <div class="content">
-                        <h3>Project Info</h3>
-                        <p><span class="fw-bold">Client:</span>Life Choices</p>
-                        <p><span class="fw-bold">Industry:</span>Web Development</p>
-                        <p><span class="fw-bold">Technologies:</span>HTML, CSS & JAVASCRIPT</p>
-                        <p><span class="fw-bold">Date:</span>17 June 2022</p>
-                        <p><span class="fw-bold">Description:</span>For this project I was taskked to create a BMI calculator with its functionality</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="button">
-                  <a target="_blank" href="https://github.com/sindilekula/BMI-Calculator">
-                  <button type="button" class="btn btn-lg rounded-pill mt-5"><span><i class="fa-brands fa-github px-1"></i></span>Github</button>
-                  </a>
-                  <a target="_blank" href="https://astounding-empanada-bf00c8.netlify.app/">
-                  <button type="button" class="btn btn-lg rounded-pill mt-5 ms-2"><span><i class="fa-solid fa-eye px-1"></i></span>Live</button>
-                  </a>
-                </div>
-              </div>
-              <div class="col-lg-4" ontouchstart="this.classList.toggle('hover');">
-                <div class="container">
-                  <div class="front" style="background-image: url(https://i.postimg.cc/TYqkMgVJ/BMI-project.png)">
-                    <div class="inner">
-                      <p>BMI Calculator</p>
-                      <span>Lorem ipsum</span>
-                    </div>
-                  </div>
-                  <div class="back">
-                    <div class="inner">
-                      <div class="content">
-                        <h3>Project Info</h3>
-                        <p><span class="fw-bold">Client:</span>Life Choices</p>
-                        <p><span class="fw-bold">Industry:</span>Web Development</p>
-                        <p><span class="fw-bold">Technologies:</span>HTML, CSS & JAVASCRIPT</p>
-                        <p><span class="fw-bold">Date:</span>17 June 2022</p>
-                        <p><span class="fw-bold">Description:</span>For this project I was taskked to create a BMI calculator with its functionality</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="button">
-                  <a target="_blank" href="https://github.com/sindilekula/BMI-Calculator">
-                  <button type="button" class="btn btn-lg rounded-pill mt-5"><span><i class="fa-brands fa-github px-1"></i></span>Github</button>
-                  </a>
-                  <a target="_blank" href="https://astounding-empanada-bf00c8.netlify.app/">
-                  <button type="button" class="btn btn-lg rounded-pill mt-5 ms-2"><span><i class="fa-solid fa-eye px-1"></i></span>Live</button>
-                  </a>
-                </div>
-              </div> -->
-              
             </div>
         </div>      
     </div>
@@ -285,7 +134,6 @@ export default {
 .projects h1 {
     font-weight: 600;
     color: white;
-    /* text-decoration: underline; */
     text-shadow: 1px 1px 1px black;
     position: relative;
     cursor: pointer;
@@ -306,12 +154,15 @@ h1{
   font-weight: normal;
   color: #444;
   text-align: center;
-  /* margin: 2rem 0; */
 }
 
 .emphasis {
   color: #ff7200;
 }
+
+/* .title {
+  color: #ff7200;
+} */
 
 span.emoji {
   color: #ff7200;
@@ -322,7 +173,6 @@ span.emoji {
   width: 90%;
   margin: 0 auto;
   max-width: 80rem;
-  /* margin-top: 30px; */
 }
 
 .cols{
@@ -335,10 +185,6 @@ span.emoji {
       -ms-flex-pack: center;
           justify-content: center;
 }
-
-/* .col-lg-4 {
-  margin: 2px;
-} */
 
 .col{
   width: calc(25% - 2rem);
@@ -380,7 +226,6 @@ span.emoji {
   background: -webkit-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
   background: -o-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
   background: linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
-  /* width: 200px; */
 }
 
 .front:after{
@@ -487,12 +332,10 @@ span.emoji {
 
 .content p {
   width: 200px;
-  /* position: absolute; */
   left: -50%;
   top: 0;
   margin-left: 285px;
   font-size: 15px;
-  /* text-shadow: 1px 1px 1px rgb(18, 17, 17); */
 }
 
 button.btn {
@@ -515,7 +358,6 @@ button.btn:hover {
 
 .content p {
   width: 200px;
-  /* position: absolute; */
   left: 0%;
   top: 0;
   margin-left: 120px;
@@ -534,7 +376,6 @@ button.btn:hover {
 
 .content p {
   width: 200px;
-  /* position: absolute; */
   left: 0%;
   top: 0;
   margin-left: 120px;
@@ -555,7 +396,6 @@ button.btn:hover {
 
 .content p {
   width: 200px;
-  /* position: absolute; */
   left: 0%;
   top: 0;
   margin-left: 120px;

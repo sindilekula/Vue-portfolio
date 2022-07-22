@@ -60,7 +60,6 @@ export default {
 .about h1 {
     font-weight: 600;
     color: white;
-    /* text-decoration: underline; */
     text-shadow: 1px 1px 1px black;
     position: relative;
     cursor: pointer;

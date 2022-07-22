@@ -278,11 +278,15 @@ ul li button:hover {
 
 .card {
     width: 500px;
-    margin-left: 500px;
+    /* margin-left: 500px; */
     box-shadow: 3px 3px 3px #000000;
     background-color: rgba(0, 0, 0, 0.4);
     border: solid 1px #ff7200;
     border-radius: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;  
 }
 
 .card:hover {
@@ -318,14 +322,10 @@ p.Institution {
     transition-delay: 0.5s;
 }
 
-@media screen and (max-width: 1152px) {
+/* @media screen and (max-width: 1152px) {
     .card {
         margin-left: 300px;
     }
-
-    /* .card:hover {
-       
-    } */
 }
 
 @media screen and (max-width: 864px) {
@@ -346,4 +346,10 @@ p.Institution {
         padding: 2px;
     }
 }
+
+@media screen and (max-width: 376px) {
+    .card:hover {
+        width: 300px;
+    }
+} */
 </style>

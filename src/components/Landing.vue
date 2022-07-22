@@ -1,7 +1,6 @@
 <template>
 <div class="container">
   <div class="hello">
-    <!-- <h1>{{ msg }}</h1> -->
     <div class="row">
       <div class="col-lg-8">
         <div class="intro-msg">
@@ -47,21 +46,7 @@ export default {
         width: 100vw;
         min-height: 100vh;
         overflow: hidden;
-        /* background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%,), url("https://cdn.pixabay.com/photo/2016/11/29/08/15/beach-1868342_960_720.jpg"); */
-        /* background-image: url("https://cdn.pixabay.com/photo/2017/11/24/21/49/bali-2975787_960_720.jpg");
-        background-position: center;
-        background-size: cover; */
-        /* https://cdn.pixabay.com/photo/2017/11/24/21/49/bali-2975787_960_720.jpg
-        https://cdn.pixabay.com/photo/2016/11/29/08/15/beach-1868342_960_720.jpg */
-        /* background: linear-gradient(
-      0deg,
-      rgba(65, 67, 69, 0.6589986336331408) 0%,
-      rgba(35, 37, 38, 0.8802871490393032) 100%
-    ),
-    url(./assets/cape-town.jpg) no-repeat top center; */
     background-image: linear-gradient(to bottom, #000000, #151313, #231f1f, #312b2a, #3f3835, #544238, #694c39, #7c5739, #9b6030, #bb6726, #dc6d18, #ff7200);
-    /* background-size: cover;
-    background-position: center; */
     }
 
     .img-fluid {

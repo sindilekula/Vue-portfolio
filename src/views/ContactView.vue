@@ -22,18 +22,6 @@
             </div>
         </div>
     </form>
-    <!-- <div class="row d-flex flex-column">
-    <div class="following">
-        <p>Follow Me</p>
-        <div class="social-media">
-        <a target="_blank" href="https://github.com/sindilekula"><i class="fa-brands fa-github text-light" data-toggle="tooltip" data-placement="top" title="Github"></i></a>
-        <a target="_blank" href="https://www.linkedin.com/in/sindile-kula-2b777a238/"><i class="fa-brands fa-linkedin text-light ms-3" data-toggle="tooltip" data-placement="top" title="Linkedin"></i></a>
-        <a target="_blank" href="https://codepen.io/sindilekula"><i class="fa-brands fa-codepen text-light ms-3" data-toggle="tooltip" data-placement="top" title="Codepen"></i></a>
-        <a target="_blank" href="https://accounts.google.com/"><i class="fa-brands fa-google text-light ms-3" data-toggle="tooltip" data-placement="top" title="Google"></i></a>
-        </div>
-                        
-    </div>
-    </div> -->
   </div>
 </section>
 </template>
@@ -43,11 +31,11 @@ export default {};
 <style scoped>
 #contact {
   background: 
-    /* top, transparent red, faked with gradient */ linear-gradient(
+    linear-gradient(
       rgb(211, 95, 0),
       rgba(0, 0, 0, 0.985)
     ),
-    /* bottom, image */ url(@/assets/earth.jpg);
+    url(@/assets/earth.jpg);
 
   background-size: cover;
   background-position: center;
@@ -60,7 +48,6 @@ export default {};
 .heading {
     font-weight: 600;
     color: white;
-     /* text-decoration: underline; */
     text-shadow: 1px 1px 1px black;
     position: relative;
     cursor: pointer;
@@ -85,9 +72,6 @@ export default {};
      text-shadow: 1px 1px 1px black;
     list-style-type: none;
     margin-top: 80px;
-    /* background-color: rgba(0, 0, 0, 0.2); */
-    /* height: 150px;
-    width: 400px; */
     display: flex;
     flex-direction: column;
     justify-content: center;

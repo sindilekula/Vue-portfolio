@@ -2,32 +2,6 @@
     <section id="testimonials">
         <div class="testimonials">
             <h1>What People Say<span class="emphasis ms-2"><i class="fa-solid fa-exclamation"></i></span></h1>
-            <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div v-for="(testimonial, index) in testimonials" :key="index" :class="{ active: index === 0}" class="carousel-item">
-                        <div class="card p-5 mt-5">
-                                <div class="details d-flex flex-row">
-                                    <img :src="testimonial.imgURL" class="img-fluid rounded-circle" alt="..." style="width: 150px; height: 150px; object-fit: cover;">
-                                    <div class="info d-flex flex-column ms-3">
-                                        <p class="text-white">{{ testimonial.name }}</p>
-                                        <p class="text-muted">{{ testimonial.relationship }}</p>
-                                    </div>
-                                </div>
-                                <div class="reviews">
-                                    <p class="text-white mt-5">{{ testimonial.message }}</p>
-                                </div>
-                                <div class="ratings text-warning mt-5">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                        </div>
-                    </div>  
-                </div> 
-            </div> -->
-
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div v-for="(testimonial, index) in testimonials" :key="index" :class="{ active: index === 0}" class="carousel-item">
@@ -122,15 +96,11 @@ export default {
     background-image: linear-gradient(to bottom, #000000, #151313, #231f1f, #312b2a, #3f3835, #544238, #694c39, #7c5739, #9b6030, #bb6726, #dc6d18, #ff7200);
     min-height: 100vh;
     width: 100%;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
 }
 
 .testimonials h1 {
     font-weight: 600;
     color: white;
-    /* text-decoration: underline; */
     text-shadow: 1px 1px 1px black;
     position: relative;
     cursor: pointer;
@@ -144,7 +114,6 @@ export default {
     bottom: -8px;
     border-bottom: solid 4px #ff7200;
 }
-
 
 .emphasis {
     color: #ff7200;
@@ -167,14 +136,16 @@ export default {
     background-color: rgba(0, 0, 0, 0.2);
     width: 600px;
     height: fit-content;
-    /* margin-left: 470px; */
     box-shadow: 2px 2px 3px 2px #000000;
     font-size: 20px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
-    
+    width: 50%;  
+}
+
+.img-fluid {
+    object-fit: cover;
 }
 
 p.name {
@@ -192,51 +163,4 @@ p.name {
     }
 }
 
-/* @media screen and (max-width: 1104px) {
-    .card {
-        margin-left: 280px;
-        width: 580px;
-    }
-}
-
-@media screen and (max-width: 890px) {
-    .card {
-        margin-left: 150px;
-        width: 500px;
-    }
-}
-
-@media screen and (max-width: 784px) {
-    .card {
-        margin-left: 50px;
-        width: 600px;
-    }
-}
-
-@media screen and (max-width: 672px) {
-    .card {
-        margin-left: 20px;
-        width: 600px;
-    }
-}
-
-@media screen and (max-width: 644px) {
-    .card {
-        width: 500px;
-    }
-}
-
-@media screen and (max-width: 376px) {
-    .card {
-        display: flex;
-        flex-direction: column;
-        width: 300px;
-        height: fit-content;
-        margin-left: 35px;
-    }
-} */
-/* .items{
-    display: flex;
-    flex-wrap: nowrap;
-} */
 </style>
